@@ -1,0 +1,611 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="https://static.readdy.ai/static/e.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oceanview Paradise Weddings - Where Dreams Meet the Ocean</title>
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#57B5E7',
+                        secondary: '#8DD3C7'
+                    },
+                    borderRadius: {
+                        'none': '0px',
+                        'sm': '4px',
+                        DEFAULT: '8px',
+                        'md': '12px',
+                        'lg': '16px',
+                        'xl': '20px',
+                        '2xl': '24px',
+                        '3xl': '32px',
+                        'full': '9999px',
+                        'button': '8px'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        :where([class^="ri-"])::before {
+            content: "\f3c2";
+        }
+    </style>
+</head>
+<body class="bg-white">
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 bg-white/90 backdrop-blur-sm border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="font-['Pacifico'] text-2xl text-primary">Oceanview Paradise</div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#venues" class="text-gray-700 hover:text-primary transition-colors">Venues</a>
+                    <a href="#packages" class="text-gray-700 hover:text-primary transition-colors">Packages</a>
+                    <a href="#gallery" class="text-gray-700 hover:text-primary transition-colors">Gallery</a>
+                    <a href="#testimonials" class="text-gray-700 hover:text-primary transition-colors">Testimonials</a>
+                    <a href="#about" class="text-gray-700 hover:text-primary transition-colors">About</a>
+                    <a href="#contact" class="text-gray-700 hover:text-primary transition-colors">Contact</a>
+                </div>
+                <button class="md:hidden w-8 h-8 flex items-center justify-center" id="mobile-menu-btn">
+                    <i class="ri-menu-line text-xl"></i>
+                </button>
+            </div>
+        </div>
+        <div class="md:hidden hidden bg-white border-t border-gray-100" id="mobile-menu">
+            <div class="px-4 py-2 space-y-2">
+                <a href="#venues" class="block py-2 text-gray-700">Venues</a>
+                <a href="#packages" class="block py-2 text-gray-700">Packages</a>
+                <a href="#gallery" class="block py-2 text-gray-700">Gallery</a>
+                <a href="#testimonials" class="block py-2 text-gray-700">Testimonials</a>
+                <a href="#about" class="block py-2 text-gray-700">About</a>
+                <a href="#contact" class="block py-2 text-gray-700">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative h-screen w-full overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-r from-white/80 via-white/40 to-transparent z-10"></div>
+        <div 
+            class="absolute inset-0 bg-cover bg-center bg-no-repeat" 
+            style="background-image: url('https://readdy.ai/api/search-image?query=Breathtaking%20beach%20wedding%20ceremony%20setup%20with%20white%20sand%2C%20crystal%20clear%20turquoise%20waters%2C%20elegant%20white%20chairs%20arranged%20in%20rows%2C%20beautiful%20floral%20arch%20overlooking%20the%20ocean%2C%20romantic%20sunset%20lighting%2C%20tropical%20paradise%20setting%20with%20palm%20trees%2C%20professional%20wedding%20photography%20style%2C%20dreamy%20atmosphere%2C%20luxury%20destination%20wedding%20venue%2C%20pristine%20coastline%2C%20gentle%20waves%2C%20soft%20golden%20hour%20lighting%20creating%20perfect%20wedding%20ambiance&width=1920&height=1080&seq=hero001&orientation=landscape')">
+        </div>
+        <div class="relative z-20 h-full flex items-center">
+            <div class="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="max-w-2xl">
+                    <h1 class="text-5xl md:text-7xl font-bold text-gray-900 mb-6 leading-tight">Where Dreams Meet the Ocean</h1>
+                    <p class="text-xl md:text-2xl text-gray-700 mb-8 leading-relaxed">Create unforgettable memories at our exclusive beachfront wedding venue, where pristine white sands and crystal-clear waters provide the perfect backdrop for your special day.</p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <button class="bg-primary text-white px-8 py-4 !rounded-button text-lg font-semibold hover:bg-primary/90 transition-colors whitespace-nowrap">Book Your Dream Wedding</button>
+                        <button class="border-2 border-primary text-primary px-8 py-4 !rounded-button text-lg font-semibold hover:bg-primary hover:text-white transition-colors whitespace-nowrap">View Our Packages</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Value Proposition -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Why Choose Oceanview Paradise</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Experience the perfect blend of natural beauty, luxury amenities, and exceptional service for your once-in-a-lifetime celebration.</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="text-center bg-white p-8 rounded-xl shadow-sm">
+                    <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="ri-sun-line text-2xl text-primary"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Oceanfront Ceremonies</h3>
+                    <p class="text-gray-600 leading-relaxed">Exchange vows with the endless ocean as your backdrop, creating a truly magical and intimate atmosphere that your guests will never forget.</p>
+                </div>
+                <div class="text-center bg-white p-8 rounded-xl shadow-sm">
+                    <div class="w-16 h-16 bg-secondary/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="ri-gift-line text-2xl text-secondary"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">All-Inclusive Packages</h3>
+                    <p class="text-gray-600 leading-relaxed">From catering to decorations, photography to entertainment, our comprehensive packages ensure every detail is perfectly coordinated for your special day.</p>
+                </div>
+                <div class="text-center bg-white p-8 rounded-xl shadow-sm">
+                    <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="ri-user-heart-line text-2xl text-orange-500"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Professional Wedding Planning</h3>
+                    <p class="text-gray-600 leading-relaxed">Our experienced wedding coordinators work closely with you to bring your vision to life, handling every detail so you can focus on celebrating.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Wedding Packages -->
+    <section id="packages" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Wedding Packages</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Choose from our carefully curated wedding packages, each designed to create unforgettable moments in paradise.</p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white border border-gray-200 rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow">
+                    <div class="h-64 bg-cover bg-center" style="background-image: url('https://readdy.ai/api/search-image?query=Intimate%20beach%20wedding%20ceremony%20setup%20with%2030%20guests%2C%20white%20wooden%20chairs%20arranged%20on%20pristine%20white%20sand%2C%20simple%20elegant%20floral%20arch%2C%20turquoise%20ocean%20backdrop%2C%20romantic%20sunset%20lighting%2C%20tropical%20paradise%20setting%2C%20luxury%20destination%20wedding%2C%20professional%20photography%20style%2C%20dreamy%20atmosphere&width=400&height=300&seq=package001&orientation=landscape')"></div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-2">Intimate Beach Ceremony</h3>
+                        <p class="text-3xl font-bold text-primary mb-4">$8,500</p>
+                        <p class="text-gray-600 mb-4">Perfect for couples seeking a romantic, intimate celebration with up to 30 guests on our pristine beachfront.</p>
+                        <ul class="space-y-2 mb-6">
+                            <li class="flex items-center text-sm text-gray-600">
+                                <i class="ri-check-line text-green-500 mr-2"></i>
+                                Beachfront ceremony setup
+                            </li>
+                            <li class="flex items-center text-sm text-gray-600">
+                                <i class="ri-check-line text-green-500 mr-2"></i>
+                                Floral arch and aisle decorations
+                            </li>
+                            <li class="flex items-center text-sm text-gray-600">
+                                <i class="ri-check-line text-green-500 mr-2"></i>
+                                Professional photography (4 hours)
+                            </li>
+                            <li class="flex items-center text-sm text-gray-600">
+                                <i class="ri-check-line text-green-500 mr-2"></i>
+                                Champagne toast for all guests
+                            </li>
+                        </ul>
+                        <button class="w-full bg-primary text-white py-3 !rounded-button font-semibold hover:bg-primary/90 transition-colors whitespace-nowrap">Learn More</button>
+                    </div>
+                </div>
+                <div class="bg-white border border-gray-200 rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow">
+                    <div class="h-64 bg-cover bg-center" style="background-image: url('https://readdy.ai/api/search-image?query=Elegant%20garden%20pavilion%20wedding%20reception%20with%2075%20guests%2C%20beautiful%20tropical%20garden%20setting%2C%20white%20tent%20with%20string%20lights%2C%20round%20tables%20with%20elegant%20centerpieces%2C%20ocean%20view%20in%20background%2C%20luxury%20destination%20wedding%20venue%2C%20professional%20event%20photography%20style%2C%20romantic%20evening%20atmosphere&width=400&height=300&seq=package002&orientation=landscape')"></div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-2">Garden Pavilion Celebration</h3>
+                        <p class="text-3xl font-bold text-primary mb-4">$15,500</p>
+                        <p class="text-gray-600 mb-4">Elegant garden setting with ocean views, perfect for celebrations with up to 75 guests in our tropical paradise.</p>
+                        <ul class="space-y-2 mb-6">
+                            <li class="flex items-center text-sm text-gray-600">
+                                <i class="ri-check-line text-green-500 mr-2"></i>
+                                Garden pavilion ceremony & reception
+                            </li>
+                            <li class="flex items-center text-sm text-gray-600">
+                                <i class="ri-check-line text-green-500 mr-2"></i>
+                                Three-course plated dinner
+                            </li>
+                            <li class="flex items-center text-sm text-gray-600">
+                                <i class="ri-check-line text-green-500 mr-2"></i>
+                                Professional DJ and sound system
+                            </li>
+                            <li class="flex items-center text-sm text-gray-600">
+                                <i class="ri-check-line text-green-500 mr-2"></i>
+                                Bridal suite accommodation
+                            </li>
+                        </ul>
+                        <button class="w-full bg-primary text-white py-3 !rounded-button font-semibold hover:bg-primary/90 transition-colors whitespace-nowrap">Learn More</button>
+                    </div>
+                </div>
+                <div class="bg-white border border-gray-200 rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow">
+                    <div class="h-64 bg-cover bg-center" style="background-image: url('https://readdy.ai/api/search-image?query=Luxury%20sunset%20deck%20wedding%20reception%20with%20120%20guests%2C%20elevated%20wooden%20deck%20overlooking%20ocean%2C%20elegant%20long%20tables%20with%20premium%20linens%2C%20sophisticated%20lighting%20design%2C%20golden%20sunset%20backdrop%2C%20high-end%20destination%20wedding%20venue%2C%20professional%20luxury%20event%20photography%2C%20spectacular%20ocean%20views&width=400&height=300&seq=package003&orientation=landscape')"></div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-2">Luxury Sunset Deck</h3>
+                        <p class="text-3xl font-bold text-primary mb-4">$25,500</p>
+                        <p class="text-gray-600 mb-4">Our premium package featuring our exclusive sunset deck with panoramic ocean views for up to 120 guests.</p>
+                        <ul class="space-y-2 mb-6">
+                            <li class="flex items-center text-sm text-gray-600">
+                                <i class="ri-check-line text-green-500 mr-2"></i>
+                                Exclusive sunset deck venue
+                            </li>
+                            <li class="flex items-center text-sm text-gray-600">
+                                <i class="ri-check-line text-green-500 mr-2"></i>
+                                Premium five-course tasting menu
+                            </li>
+                            <li class="flex items-center text-sm text-gray-600">
+                                <i class="ri-check-line text-green-500 mr-2"></i>
+                                Live band and entertainment
+                            </li>
+                            <li class="flex items-center text-sm text-gray-600">
+                                <i class="ri-check-line text-green-500 mr-2"></i>
+                                Two-night honeymoon suite
+                            </li>
+                        </ul>
+                        <button class="w-full bg-primary text-white py-3 !rounded-button font-semibold hover:bg-primary/90 transition-colors whitespace-nowrap">Learn More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Photo Gallery -->
+    <section id="gallery" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Wedding Gallery</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Discover the magic of weddings at Oceanview Paradise through our collection of beautiful moments captured by professional photographers.</p>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mb-12">
+                <div class="aspect-square bg-cover bg-center rounded-lg" style="background-image: url('https://readdy.ai/api/search-image?query=Beautiful%20bride%20and%20groom%20exchanging%20vows%20on%20pristine%20white%20sand%20beach%2C%20crystal%20clear%20turquoise%20water%20background%2C%20romantic%20sunset%20lighting%2C%20elegant%20wedding%20dress%20flowing%20in%20ocean%20breeze%2C%20professional%20wedding%20photography%2C%20emotional%20intimate%20moment%2C%20tropical%20paradise%20destination%20wedding&width=300&height=300&seq=gallery001&orientation=squarish')"></div>
+                <div class="aspect-square bg-cover bg-center rounded-lg" style="background-image: url('https://readdy.ai/api/search-image?query=Elegant%20beach%20wedding%20reception%20dinner%20setup%2C%20round%20tables%20with%20white%20linens%20and%20tropical%20centerpieces%2C%20string%20lights%20overhead%2C%20ocean%20view%20background%2C%20guests%20enjoying%20celebration%2C%20luxury%20destination%20wedding%20venue%2C%20professional%20event%20photography%2C%20romantic%20evening%20atmosphere&width=300&height=300&seq=gallery002&orientation=squarish')"></div>
+                <div class="aspect-square bg-cover bg-center rounded-lg" style="background-image: url('https://readdy.ai/api/search-image?query=Stunning%20wedding%20couple%20portrait%20on%20tropical%20beach%20at%20golden%20hour%2C%20bride%20in%20flowing%20white%20dress%2C%20groom%20in%20light%20suit%2C%20romantic%20pose%20with%20ocean%20waves%2C%20professional%20wedding%20photography%2C%20dreamy%20sunset%20lighting%2C%20luxury%20destination%20wedding%2C%20intimate%20moment&width=300&height=300&seq=gallery003&orientation=squarish')"></div>
+                <div class="aspect-square bg-cover bg-center rounded-lg" style="background-image: url('https://readdy.ai/api/search-image?query=Beautiful%20floral%20wedding%20arch%20on%20beach%20with%20white%20roses%20and%20tropical%20greenery%2C%20ocean%20backdrop%2C%20white%20sand%20aisle%20with%20petals%2C%20elegant%20ceremony%20setup%2C%20professional%20wedding%20photography%2C%20romantic%20tropical%20paradise%20setting%2C%20luxury%20destination%20wedding%20venue&width=300&height=300&seq=gallery004&orientation=squarish')"></div>
+                <div class="aspect-square bg-cover bg-center rounded-lg" style="background-image: url('https://readdy.ai/api/search-image?query=Wedding%20guests%20celebrating%20and%20dancing%20on%20beach%20at%20sunset%2C%20joyful%20celebration%2C%20tropical%20paradise%20setting%2C%20string%20lights%20and%20lanterns%2C%20professional%20event%20photography%2C%20happy%20couples%20and%20families%2C%20luxury%20destination%20wedding%20reception%20atmosphere&width=300&height=300&seq=gallery005&orientation=squarish')"></div>
+                <div class="aspect-square bg-cover bg-center rounded-lg" style="background-image: url('https://readdy.ai/api/search-image?query=Luxury%20beachfront%20wedding%20venue%20overview%20showing%20ceremony%20and%20reception%20areas%2C%20pristine%20white%20sand%20beach%2C%20crystal%20clear%20turquoise%20waters%2C%20elegant%20pavilions%20and%20decks%2C%20tropical%20landscaping%2C%20professional%20architectural%20photography%2C%20paradise%20destination%20wedding%20location&width=300&height=300&seq=gallery006&orientation=squarish')"></div>
+                <div class="aspect-square bg-cover bg-center rounded-lg" style="background-image: url('https://readdy.ai/api/search-image?query=Romantic%20wedding%20cake%20cutting%20ceremony%20on%20beach%20deck%2C%20multi-tier%20white%20wedding%20cake%20with%20tropical%20flowers%2C%20bride%20and%20groom%20sharing%20intimate%20moment%2C%20ocean%20sunset%20background%2C%20professional%20wedding%20photography%2C%20luxury%20destination%20celebration&width=300&height=300&seq=gallery007&orientation=squarish')"></div>
+                <div class="aspect-square bg-cover bg-center rounded-lg" style="background-image: url('https://readdy.ai/api/search-image?query=Wedding%20party%20group%20photo%20on%20tropical%20beach%2C%20bridesmaids%20in%20flowing%20dresses%2C%20groomsmen%20in%20light%20suits%2C%20beautiful%20ocean%20backdrop%2C%20professional%20wedding%20photography%2C%20joyful%20celebration%2C%20luxury%20destination%20wedding%2C%20pristine%20white%20sand%20setting&width=300&height=300&seq=gallery008&orientation=squarish')"></div>
+            </div>
+            <div class="text-center">
+                <button class="bg-primary text-white px-8 py-4 !rounded-button text-lg font-semibold hover:bg-primary/90 transition-colors whitespace-nowrap">View Full Gallery</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">What Our Couples Say</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Read heartfelt testimonials from couples who celebrated their dream weddings at Oceanview Paradise.</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-gray-50 p-8 rounded-xl">
+                    <div class="flex mb-4">
+                        <i class="ri-star-fill text-yellow-400"></i>
+                        <i class="ri-star-fill text-yellow-400"></i>
+                        <i class="ri-star-fill text-yellow-400"></i>
+                        <i class="ri-star-fill text-yellow-400"></i>
+                        <i class="ri-star-fill text-yellow-400"></i>
+                    </div>
+                    <p class="text-gray-700 mb-6 leading-relaxed">"Oceanview Paradise exceeded every expectation we had for our wedding day. The stunning beachfront location, impeccable service, and attention to detail made our celebration absolutely magical. Our guests are still talking about how beautiful everything was!"</p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center mr-4">
+                            <i class="ri-user-heart-fill text-primary"></i>
+                        </div>
+                        <div>
+                            <p class="font-semibold text-gray-900">Sarah & Michael Thompson</p>
+                            <p class="text-sm text-gray-600">Married June 2024</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-gray-50 p-8 rounded-xl">
+                    <div class="flex mb-4">
+                        <i class="ri-star-fill text-yellow-400"></i>
+                        <i class="ri-star-fill text-yellow-400"></i>
+                        <i class="ri-star-fill text-yellow-400"></i>
+                        <i class="ri-star-fill text-yellow-400"></i>
+                        <i class="ri-star-fill text-yellow-400"></i>
+                    </div>
+                    <p class="text-gray-700 mb-6 leading-relaxed">"From our first visit to the final dance, the team at Oceanview Paradise made our wedding planning stress-free and enjoyable. The garden pavilion was the perfect setting for our celebration, and the sunset views were breathtaking. Highly recommend!"</p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 bg-secondary/20 rounded-full flex items-center justify-center mr-4">
+                            <i class="ri-user-heart-fill text-secondary"></i>
+                        </div>
+                        <div>
+                            <p class="font-semibold text-gray-900">Emily & James Rodriguez</p>
+                            <p class="text-sm text-gray-600">Married September 2024</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-gray-50 p-8 rounded-xl">
+                    <div class="flex mb-4">
+                        <i class="ri-star-fill text-yellow-400"></i>
+                        <i class="ri-star-fill text-yellow-400"></i>
+                        <i class="ri-star-fill text-yellow-400"></i>
+                        <i class="ri-star-fill text-yellow-400"></i>
+                        <i class="ri-star-fill text-yellow-400"></i>
+                    </div>
+                    <p class="text-gray-700 mb-6 leading-relaxed">"We couldn't have asked for a more perfect wedding venue. The luxury sunset deck package was worth every penny - the views were spectacular and the service was flawless. Our wedding coordinator made everything seamless and beautiful."</p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center mr-4">
+                            <i class="ri-user-heart-fill text-orange-500"></i>
+                        </div>
+                        <div>
+                            <p class="font-semibold text-gray-900">Jessica & David Chen</p>
+                            <p class="text-sm text-gray-600">Married November 2024</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Venue Highlights -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-16 items-center mb-16">
+                <div>
+                    <h2 class="text-4xl font-bold text-gray-900 mb-6">Luxury Accommodations</h2>
+                    <p class="text-lg text-gray-600 mb-6 leading-relaxed">Treat your wedding party and guests to exceptional comfort in our luxury beachfront suites and villas. Each accommodation features stunning ocean views, premium amenities, and elegant tropical décor.</p>
+                    <ul class="space-y-3">
+                        <li class="flex items-center text-gray-700">
+                            <i class="ri-check-line text-green-500 mr-3"></i>
+                            Ocean-view bridal and honeymoon suites
+                        </li>
+                        <li class="flex items-center text-gray-700">
+                            <i class="ri-check-line text-green-500 mr-3"></i>
+                            Private balconies and terraces
+                        </li>
+                        <li class="flex items-center text-gray-700">
+                            <i class="ri-check-line text-green-500 mr-3"></i>
+                            Spa services and wellness amenities
+                        </li>
+                        <li class="flex items-center text-gray-700">
+                            <i class="ri-check-line text-green-500 mr-3"></i>
+                            Concierge and room service
+                        </li>
+                    </ul>
+                </div>
+                <div class="h-96 bg-cover bg-center rounded-xl" style="background-image: url('https://readdy.ai/api/search-image?query=Luxury%20beachfront%20hotel%20suite%20interior%20with%20ocean%20view%2C%20elegant%20tropical%20decor%2C%20premium%20furnishings%2C%20private%20balcony%20overlooking%20turquoise%20waters%2C%20honeymoon%20suite%20setup%20with%20romantic%20touches%2C%20high-end%20resort%20accommodation%2C%20professional%20interior%20photography%2C%20paradise%20destination&width=600&height=400&seq=accommodation001&orientation=landscape')"></div>
+            </div>
+            <div class="grid md:grid-cols-2 gap-16 items-center mb-16">
+                <div class="h-96 bg-cover bg-center rounded-xl order-2 md:order-1" style="background-image: url('https://readdy.ai/api/search-image?query=Gourmet%20wedding%20dining%20experience%20with%20elegant%20plated%20cuisine%2C%20fresh%20seafood%20and%20tropical%20ingredients%2C%20professional%20chef%20presentation%2C%20luxury%20restaurant%20setting%20with%20ocean%20views%2C%20fine%20dining%20wedding%20reception%2C%20culinary%20excellence%2C%20romantic%20ambiance&width=600&height=400&seq=dining001&orientation=landscape')"></div>
+                <div class="order-1 md:order-2">
+                    <h2 class="text-4xl font-bold text-gray-900 mb-6">Exquisite Dining Experiences</h2>
+                    <p class="text-lg text-gray-600 mb-6 leading-relaxed">Delight your guests with exceptional culinary creations from our award-winning chefs. We specialize in fresh, local ingredients and can accommodate all dietary preferences and cultural traditions.</p>
+                    <ul class="space-y-3">
+                        <li class="flex items-center text-gray-700">
+                            <i class="ri-check-line text-green-500 mr-3"></i>
+                            Custom menu design and tasting sessions
+                        </li>
+                        <li class="flex items-center text-gray-700">
+                            <i class="ri-check-line text-green-500 mr-3"></i>
+                            Fresh seafood and local tropical cuisine
+                        </li>
+                        <li class="flex items-center text-gray-700">
+                            <i class="ri-check-line text-green-500 mr-3"></i>
+                            Dietary accommodations and cultural menus
+                        </li>
+                        <li class="flex items-center text-gray-700">
+                            <i class="ri-check-line text-green-500 mr-3"></i>
+                            Premium bar service and signature cocktails
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="grid md:grid-cols-2 gap-16 items-center">
+                <div>
+                    <h2 class="text-4xl font-bold text-gray-900 mb-6">Guest Activities & Local Attractions</h2>
+                    <p class="text-lg text-gray-600 mb-6 leading-relaxed">Extend your celebration with exciting activities and excursions for your wedding party and guests. From water sports to cultural experiences, create lasting memories beyond your special day.</p>
+                    <ul class="space-y-3">
+                        <li class="flex items-center text-gray-700">
+                            <i class="ri-check-line text-green-500 mr-3"></i>
+                            Snorkeling and diving adventures
+                        </li>
+                        <li class="flex items-center text-gray-700">
+                            <i class="ri-check-line text-green-500 mr-3"></i>
+                            Sunset sailing and boat excursions
+                        </li>
+                        <li class="flex items-center text-gray-700">
+                            <i class="ri-check-line text-green-500 mr-3"></i>
+                            Cultural tours and local experiences
+                        </li>
+                        <li class="flex items-center text-gray-700">
+                            <i class="ri-check-line text-green-500 mr-3"></i>
+                            Spa treatments and wellness activities
+                        </li>
+                    </ul>
+                </div>
+                <div class="h-96 bg-cover bg-center rounded-xl" style="background-image: url('https://readdy.ai/api/search-image?query=Wedding%20guests%20enjoying%20tropical%20activities%2C%20snorkeling%20in%20crystal%20clear%20waters%2C%20sunset%20sailing%20excursion%2C%20beach%20volleyball%20and%20water%20sports%2C%20group%20of%20people%20having%20fun%20in%20paradise%2C%20luxury%20resort%20activities%2C%20professional%20lifestyle%20photography%2C%20tropical%20destination%20experiences&width=600&height=400&seq=activities001&orientation=landscape')"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Start Planning Your Dream Wedding</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Contact our wedding specialists to begin creating your perfect celebration at Oceanview Paradise. We're here to make your dreams come true.</p>
+            </div>
+            <div class="grid lg:grid-cols-2 gap-16">
+                <div>
+                    <form class="space-y-6">
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-sm font-semibold text-gray-700 mb-2">Bride's Name</label>
+                                <input type="text" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="Enter bride's name">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-semibold text-gray-700 mb-2">Groom's Name</label>
+                                <input type="text" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="Enter groom's name">
+                            </div>
+                        </div>
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-sm font-semibold text-gray-700 mb-2">Email Address</label>
+                                <input type="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="your@email.com">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-semibold text-gray-700 mb-2">Phone Number</label>
+                                <input type="tel" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="+1 (555) 000-0000">
+                            </div>
+                        </div>
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-sm font-semibold text-gray-700 mb-2">Wedding Date</label>
+                                <input type="date" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-semibold text-gray-700 mb-2">Guest Count</label>
+                                <input type="number" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="Number of guests">
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-semibold text-gray-700 mb-2">Message</label>
+                            <textarea rows="4" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="Tell us about your dream wedding..."></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-primary text-white py-4 !rounded-button text-lg font-semibold hover:bg-primary/90 transition-colors whitespace-nowrap">Send Inquiry</button>
+                    </form>
+                </div>
+                <div class="space-y-8">
+                    <div>
+                        <h3 class="text-2xl font-bold text-gray-900 mb-6">Contact Information</h3>
+                        <div class="space-y-4">
+                            <div class="flex items-center">
+                                <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mr-4">
+                                    <i class="ri-phone-line text-primary"></i>
+                                </div>
+                                <div>
+                                    <p class="font-semibold text-gray-900">Phone</p>
+                                    <p class="text-gray-600">+1 (555) 123-4567</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center">
+                                <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mr-4">
+                                    <i class="ri-mail-line text-primary"></i>
+                                </div>
+                                <div>
+                                    <p class="font-semibold text-gray-900">Email</p>
+                                    <p class="text-gray-600">weddings@oceanviewparadise.com</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center">
+                                <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mr-4">
+                                    <i class="ri-map-pin-line text-primary"></i>
+                                </div>
+                                <div>
+                                    <p class="font-semibold text-gray-900">Location</p>
+                                    <p class="text-gray-600">Paradise Beach Resort<br>123 Ocean Drive, Tropical Island</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-4">Follow Us</h3>
+                        <div class="flex space-x-4">
+                            <div class="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center hover:bg-primary hover:text-white transition-colors cursor-pointer">
+                                <i class="ri-facebook-fill"></i>
+                            </div>
+                            <div class="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center hover:bg-primary hover:text-white transition-colors cursor-pointer">
+                                <i class="ri-instagram-line"></i>
+                            </div>
+                            <div class="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center hover:bg-primary hover:text-white transition-colors cursor-pointer">
+                                <i class="ri-pinterest-line"></i>
+                            </div>
+                            <div class="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center hover:bg-primary hover:text-white transition-colors cursor-pointer">
+                                <i class="ri-youtube-line"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8 mb-12">
+                <div>
+                    <div class="font-['Pacifico'] text-2xl text-primary mb-4">Oceanview Paradise</div>
+                    <p class="text-gray-400 leading-relaxed mb-6">Creating unforgettable wedding experiences in paradise, where dreams meet the ocean and love stories begin.</p>
+                    <div class="flex space-x-4">
+                        <div class="w-8 h-8 bg-white/10 rounded-full flex items-center justify-center hover:bg-primary transition-colors cursor-pointer">
+                            <i class="ri-facebook-fill text-sm"></i>
+                        </div>
+                        <div class="w-8 h-8 bg-white/10 rounded-full flex items-center justify-center hover:bg-primary transition-colors cursor-pointer">
+                            <i class="ri-instagram-line text-sm"></i>
+                        </div>
+                        <div class="w-8 h-8 bg-white/10 rounded-full flex items-center justify-center hover:bg-primary transition-colors cursor-pointer">
+                            <i class="ri-pinterest-line text-sm"></i>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Services</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-white transition-colors">Beach Ceremonies</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Garden Receptions</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Wedding Planning</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Photography</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Accommodations</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Information</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-white transition-colors">About Us</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">FAQ</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Policies</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Terms & Conditions</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Newsletter</h4>
+                    <p class="text-gray-400 mb-4">Subscribe for wedding inspiration and exclusive offers.</p>
+                    <div class="flex">
+                        <input type="email" placeholder="Your email" class="flex-1 px-4 py-2 bg-white/10 border border-white/20 rounded-l-lg focus:outline-none focus:border-primary text-white placeholder-gray-400">
+                        <button class="bg-primary px-4 py-2 rounded-r-lg hover:bg-primary/90 transition-colors whitespace-nowrap">
+                            <i class="ri-send-plane-line"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 text-sm">© 2025 Oceanview Paradise Weddings. All rights reserved.</p>
+                <div class="flex items-center space-x-6 mt-4 md:mt-0">
+                    <div class="w-8 h-8 flex items-center justify-center">
+                        <i class="ri-visa-fill text-2xl text-gray-400"></i>
+                    </div>
+                    <div class="w-8 h-8 flex items-center justify-center">
+                        <i class="ri-mastercard-fill text-2xl text-gray-400"></i>
+                    </div>
+                    <div class="w-8 h-8 flex items-center justify-center">
+                        <i class="ri-paypal-fill text-2xl text-gray-400"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script id="mobile-menu-script">
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+            
+            mobileMenuBtn.addEventListener('click', function() {
+                mobileMenu.classList.toggle('hidden');
+            });
+        });
+    </script>
+
+    <script id="smooth-scroll-script">
+        document.addEventListener('DOMContentLoaded', function() {
+            const links = document.querySelectorAll('a[href^="#"]');
+            
+            links.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href');
+                    const targetElement = document.querySelector(targetId);
+                    
+                    if (targetElement) {
+                        const offsetTop = targetElement.offsetTop - 80;
+                        window.scrollTo({
+                            top: offsetTop,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+<script>
+    !function (t, e) { var o, n, p, r; e.__SV || (window.posthog = e, e._i = [], e.init = function (i, s, a) { function g(t, e) { var o = e.split("."); 2 == o.length && (t = t[o[0]], e = o[1]), t[e] = function () { t.push([e].concat(Array.prototype.slice.call(arguments, 0))) } } (p = t.createElement("script")).type = "text/javascript", p.crossOrigin = "anonymous", p.async = !0, p.src = s.api_host.replace(".i.posthog.com", "-assets.i.posthog.com") + "/static/array.js", (r = t.getElementsByTagName("script")[0]).parentNode.insertBefore(p, r); var u = e; for (void 0 !== a ? u = e[a] = [] : a = "posthog", u.people = u.people || [], u.toString = function (t) { var e = "posthog"; return "posthog" !== a && (e += "." + a), t || (e += " (stub)"), e }, u.people.toString = function () { return u.toString(1) + ".people (stub)" }, o = "init capture register register_once register_for_session unregister unregister_for_session getFeatureFlag getFeatureFlagPayload isFeatureEnabled reloadFeatureFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSessionId getSurveys getActiveMatchingSurveys renderSurvey canRenderSurvey getNextSurveyStep identify setPersonProperties group resetGroups setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags resetGroupPropertiesForFlags reset get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted captureException loadToolbar get_property getSessionProperty createPersonProfile opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing clear_opt_in_out_capturing debug".split(" "), n = 0; n < o.length; n++)g(u, o[n]); e._i.push([i, s, a]) }, e.__SV = 1) }(document, window.posthog || []);
+    posthog.init('phc_t9tkQZJiyi2ps9zUYm8TDsL6qXo4YmZx0Ot5rBlAlEd', {
+        api_host: 'https://us.i.posthog.com',
+        autocapture: false,
+        capture_pageview: false,
+        capture_pageleave: false,
+        capture_performance: {
+            web_vitals: false,
+        },
+        rageclick: false,
+    })
+    window.shareKey = 'ebsB_fF_JtDnLfv0y6qrcw';
+    window.host = 'readdy.ai';
+</script>
+</body>
+</html>
